@@ -1,0 +1,13 @@
+{
+  "name": "QuickNodeServer",
+  "version": "0.1.0",
+  "author": "@mdirienzo",
+  "description": "A dead-simple http server.",
+  "dependencies": {
+    "http-server": "^0.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server -a 0.0.0.0 -p 8000"
+  }
+}

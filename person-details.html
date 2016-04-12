@@ -1,0 +1,31 @@
+<!-- Notes for the future: Make this a angular fancy loop and don't hard code it.
+Stop using <br> and style with css. Do better. -->
+
+<div class="person-details" ng-controller="PersonDetailController as personDetails">
+
+<img ng-src="{{imageLoc}}">
+
+
+Person ID: {{id}}
+
+<form ng-submit="personDetails.save()">
+
+  <label>First Name:
+    <input class="textInput" type="text" ng-model="firstNameText" size="30" >
+  </label><br>
+
+  <label>Last Name:
+    <input class="textInput" type="text" ng-model="lastNameText" size="30" >
+  </label><br>
+
+  <label>Email:
+    <input class="textInput" type="text" ng-model="emailText" size="30" >
+  </label><br>
+
+  <label>Phone Number:
+    <input class="textInput" type="text" ng-model="phoneNumberText" size="30" >
+  </label><br>
+
+  <br><input class="btn-primary" type="submit" value="Save">
+</form>
+</div>

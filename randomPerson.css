@@ -1,0 +1,45 @@
+
+
+
+.header {
+  width: 100%;
+  height: 150px;
+  background-color: blue;
+}
+
+.content {
+  display:flex;
+  display: -webkit-flex;
+
+}
+
+
+.left-panel {
+  background-color: red;
+  flex:initial;
+  -webkit-flex: initial;
+  float:left;
+  width: 250px;
+}
+
+.left-panel .btn-primary {
+  float:right;
+}
+
+
+.main-body{
+  background-color: green;
+  width: 50%;
+  flex: 1;
+  -webkit-flex: 1;
+  float:left;
+}
+
+.person-details {
+
+  width:100%;
+}
+
+.person-details .btn-primary{
+  float:right;
+}

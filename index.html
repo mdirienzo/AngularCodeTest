@@ -1,0 +1,35 @@
+<!doctype html>
+<html ng-app="randomPersonApp">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-resource.min.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-route.min.js">
+   </script>
+   <script src="randomPerson.js"></script>
+   <link rel="stylesheet" href="randomPerson.css">
+  </head>
+  <div class="header">
+    <h2>Random Person Manipulator</h2>
+  </div>
+  <body>
+
+
+
+
+    <div class="left-panel" ng-controller="PersonListController as peopleList">
+      <ul class="unstyled">
+        <li  ng-repeat="person in peopleList.people">
+          <span ng-click="peopleList.selectPerson(person.id)"> {{person.firstName}} </span>
+        </li>
+      </ul>
+      <form ng-submit="peopleList.addPerson()">
+        <input class="btn-primary" type="submit" value="Add New Person">
+      </form>
+    </div>
+
+    <div class="main-body" ng-view>
+
+    </div>
+  </body>
+</html>
